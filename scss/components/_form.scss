@@ -1,0 +1,115 @@
+.form{
+    &.sent{
+        .form__result-message{
+            display:flex;
+        }
+    }
+    &__error-tip,&__error-email{
+        display:none;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        margin: 0px 0 0 15px;
+        color: $secondary-color;
+    }
+    &__error-icon{
+        display:none;
+    }
+    &__result-message{ 
+        margin-left: 15px;
+        font-size: 14px;
+        align-items: center;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color:#17733e;
+        display: none;
+        svg{
+            margin-right: 5px;
+        }
+    }
+    &__field{
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: 1px solid $white-gray-color;
+        display: block;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+        padding: 0 15px;
+        font-size: 16px;
+        font-family: $primary-font;
+        line-height: 24px;
+        &:focus{
+            outline:none;
+        }
+
+    }
+    &__field-group{
+        position: relative;
+        background: $white-color;
+        margin-bottom: 15px;
+        &.active{
+            .form__field-label{
+                font-size: 12px;
+                line-height: 18px;
+                font-family: $common-font;
+                top: -9px;
+                z-index: 3;
+                padding: 0 5px;
+            }
+        }
+        &.error,&.error-email{
+            .form__field{
+                border: 2px solid $secondary-color;
+            }
+            .form__error-tip{
+                display:block;
+            }
+            .form__error-icon{
+                display:block;
+                position: absolute;
+                top: 13px;
+                right: 13px;
+            }
+        }
+        &.error-email{
+            .form__error-tip{
+                display: none;
+            }
+            .form__error-email{
+                display: block;
+            }
+        }
+        &.active.error{
+            .form__field-label{
+                color: $secondary-color;
+            }
+        }
+        &--message{
+
+        display:flex;
+        align-items: center;
+        }
+    }
+    &__field-label{
+        position: absolute;
+        z-index: 1;
+        background: $white-color;
+        color: $gray-color;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        top:13px;
+        left: 15px;
+        transition: all 0.3s;
+    }
+    textarea{
+        padding: 15px;
+        box-sizing: border-box;
+        height: 170px;
+        width: 100%;
+        resize:none;
+    }
+}

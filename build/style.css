@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&family=Roboto:wght@400;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  padding-top: 80px;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+}
+.container--no-padding {
+  padding: 0;
+}
+
+main {
+  padding: 50px 0 100px 0;
+}
+
+.mobile-menu-is-opened {
+  overflow: hidden;
+}
+.mobile-menu-is-opened .mobile-menu-is-opened__shadow {
+  position: absolute;
+  z-index: 9998;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.5);
+  cursor: pointer;
+}
+.mobile-menu-is-opened .mobile-nav-menu {
+  transform: translate(0, 0);
+}
+
+p {
+  margin-bottom: 20px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+[data-tip=product-loaded] {
+  padding: 30px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

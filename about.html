@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/pages/about.css">
+    <title>Document</title>
+    <meta name="description" content="he description sould describe the page">
+</head>
+
+<body class="about-page">
+    <div class="mobile-menu-is-opened__shadow" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></div>
+    <div class="mobile-nav-menu">
+        <div class="mobile-nav-menu__header">
+            <a class="author-name" href="/">PARLIN R.</a>
+            <button class="button button-close" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></button>
+        </div>
+        <ul class="navigation">
+            <li class="navigation__active">
+                <img src="images/icons/case.svg" alt="Work">
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <img src="images/icons/user.svg" alt="About">
+                <a href="#">About</a>
+            </li>
+            <li>
+                <img src="images/icons/file.svg" alt="Resume">
+                <a href="#">Resume</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="column">
+                <button class="button button-hamburger" aria-label="Open mobile menu"
+                    onclick="toggleMobileMenu();"></button>
+                <a class="author-name" href="/">PARLIN R.</a>
+                <ul class="navigation">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <a href="#" class="button button--primary button--filled">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <section class="about">
+                <div class="column">
+                    <div class="about__description">
+                        <label class="label">About Me</label>
+                        <h1 class="heading">Nice to Meet  <span>You!</span></h1>
+                        <div class="description">
+
+                            <p>
+                                Hello, my name is Parlin and I am a UX Designer majored in the Honours Bachelors of
+                                Interaction Design at Sheridan College. I have experience working as a UX Designer at a
+                                design agency in Toronto for 2 years (and more!).
+                            </p>
+
+                            <p>
+                            <h2 class="heading">Design Philosophy</h2>
+                            </p>
+                            <p>
+                                I strive to solve problems through the lens of the users, as empathy drives my design
+                                decisions. I create digital experiences that are empowering and inclusive.
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>Thanks for reading,<br>
+                                Feel free to check out my <a href="#">resume</a> or <a href="#">contact me</a>.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="Parlin.png" alt="Parlin UX Designer" width="246px" height="227px">
+                    <img src="Parlin-second.png" alt="Parlin UX Designer" width="246px" height="227px">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="heading">Parlin Roziya</h2>
+        <ul class="navigation">
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Resume</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <a href="#" class="copyright">
+            A Portfolio Desiged by Parlin
+            <svg width="15" height="12" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                    fill="#ffffff99" />
+            </svg>
+        </a>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            let body = document.querySelector("body");
+            body.classList.toggle("mobile-menu-is-opened");
+        }
+    </script>
+</body>
+
+</html>

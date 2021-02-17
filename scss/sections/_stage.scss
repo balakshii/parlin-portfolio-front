@@ -1,0 +1,42 @@
+.stage{
+    margin-bottom: 60px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    h2.heading, h3.heading, .description{
+        color: $black-color;
+    }
+    h2{
+        font-size: 46px;
+        line-height: 60px;
+        margin-bottom: 25px;
+    }
+    &__point{
+        margin-bottom: 80px;
+        .description{
+            margin-top: 20px;
+        }
+        img{
+            width:calc(100% + 40px);
+            margin-left: -20px;
+            @media screen and (min-width: $layout-breakpoint-md){ 
+                width: 100%;
+                margin-left: 0;
+            }
+                
+        } 
+        .caption{
+            font-size: 16px;
+            font-style: italic;
+            text-align: center;
+            line-height: 22px;
+            max-width: 500px;
+            margin: 12px auto 0 auto;
+        }
+    }
+    .stage__point{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

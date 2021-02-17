@@ -1,0 +1,59 @@
+
+//Import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&family=Roboto:wght@400;600;700&display=swap');
+
+//Import basic style rules
+@import 'basic.scss';
+
+body{
+    padding-top: 80px;
+    font-family: $primary-font;
+    scroll-behavior: smooth;
+} 
+
+.container{
+    max-width: $container-width;
+    padding: $container-paddings;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    &--no-padding{
+        padding:0;
+    }
+}
+main{
+    padding: 50px 0 100px 0;
+}
+
+.mobile-menu-is-opened{
+    overflow: hidden;
+    .mobile-menu-is-opened__shadow{
+        position: absolute;
+        z-index: 9998;
+        left: 0;
+        top: 0;
+        content: '';
+        width:100%;
+        height: 100%;
+        background: rgb(#323232, 0.5);
+        cursor: pointer;
+    }
+    .mobile-nav-menu{
+        // display:block;
+        transform: translate(0, 0);
+    } 
+}
+p{
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+a{
+    text-decoration:none;
+    &:hover{
+        text-decoration:underline;
+    }
+}
+[data-tip="product-loaded"]{
+    padding: 30px 0;
+}

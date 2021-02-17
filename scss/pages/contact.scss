@@ -1,0 +1,31 @@
+//Import basic styles and default rules.
+@import '../style';
+
+//Import components
+@import '../components/buttons',
+'../components/author-name',
+'../components/mobile-nav-menu',
+'../components/label',   
+'../components/form',
+'../components/heading';
+
+//Import sections
+@import '../sections/header',
+'../sections/footer';
+h1.heading{
+    margin-top: 14px;
+}
+.contact-form{
+    margin-top: 30px;
+}
+@media screen and (min-width: $layout-breakpoint-md){
+    main{
+        padding-top:140px;
+    }
+    .contact-form{
+        width:620px;
+    }
+    .form__result-message{
+        font-size: 16px;
+    }
+}

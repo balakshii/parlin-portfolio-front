@@ -1,0 +1,23 @@
+.heading{
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 75px;
+    color: $primary-color;
+    span{
+        color: $secondary-color;
+    }
+    @media screen and (min-width: $layout-breakpoint-sm){
+        font-size: 64px;
+    }
+} 
+h2.heading, h3.heading{
+    color: $gray-color;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    @media screen and (min-width: $layout-breakpoint-sm){
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,35 @@
+//Import basic styles and default rules.
+@import '../style'; 
+
+//Import components
+@import '../components/buttons',
+'../components/author-name',
+'../components/mobile-nav-menu',
+'../components/label',   
+'../components/heading',
+'../components/description';
+
+//Import sections
+@import '../sections/header',
+'../sections/footer',
+'../sections/about';
+
+section.about{
+    .column{
+        &:last-child{
+            padding-top: 60px;
+            text-align: center;
+        }
+        img{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: $layout-breakpoint-sm){
+    main{
+        padding-top: 140px;
+    }
+}

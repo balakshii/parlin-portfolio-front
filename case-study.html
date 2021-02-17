@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/pages/case-study.css">
+    <title>Document</title>
+    <meta name="description" content="he description sould describe the page">
+</head>
+
+<body class="case-study">
+    <div class="mobile-menu-is-opened__shadow" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></div>
+    <div class="mobile-nav-menu">
+        <div class="mobile-nav-menu__header">
+            <a class="author-name" href="/">PARLIN R.</a>
+            <button class="button button-close" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></button>
+        </div>
+        <ul class="navigation">
+            <li class="navigation__active">
+                <img src="images/icons/case.svg" alt="Work">
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <img src="images/icons/user.svg" alt="About">
+                <a href="#">About</a>
+            </li>
+            <li>
+                <img src="images/icons/file.svg" alt="Resume">
+                <a href="#">Resume</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="column">
+                <button class="button button-hamburger" aria-label="Open mobile menu"
+                    onclick="toggleMobileMenu();"></button>
+                <a class="author-name" href="/">PARLIN R.</a>
+                <ul class="navigation">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <a href="#" class="button button--primary button--filled">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="overview">
+            <div class="container">
+                <div class="column">
+                    <h1 class="heading">This is an extra long title for my case study</h1>
+                    <div class="description">Duis eu velit tempus erat egestas efficitur. In hac habitasse platea
+                        dictumst.
+                        Fusce a nunc eget ligula suscipit finibus. </div>
+                    <a href="#project-story" aria-label="scroll down" class="button button--arrow-down" onclick="smoothScroll('#stage-1');return false;">
+                        <svg width="22" height="61" viewBox="0 0 22 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.791016 49.7292L10.9993 60.0833L21.2077 49.7292L19.1456 47.6376L12.4577 54.4211V0.916656H9.54102V54.4211L2.8531 47.6376L0.791016 49.7292Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="overview__image"></div>
+            <style>
+                .overview .overview__image {
+                    background-image: url('http://127.0.0.1:5500/images/projects/project-1-preview-large.jpg');
+                }
+            </style>
+        </section>
+        <section class="base-content" id="project-story">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <section class="stage" id="stage-1">
+                            <h2 class="heading">Project Scope</h2>
+                            <article class="stage__point">
+                                <h3 class="heading">The Challenge</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point">
+                                <h3 class="heading">My role</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point">
+                                <h3 class="heading">The Solution</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point">
+                                <img src="images/projects/project-1-point.jpg" alt="The object">
+                                <div class="container">
+                                    <div class="caption">Image caption centered this way and I’ll make this a bit longer
+                                        to
+                                        indicate
+                                        the
+                                        amount
+                                        of line-height. </div>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="stage" id="stage-2">
+                            <h2 class="heading">Design Process</h2>
+                            <article class="stage__point">
+                                <h3 class="heading">Phase 1</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point">
+                                <h3 class="heading">Phase 2</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point">
+                                <h3 class="heading">Phase 3</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                        </section>
+                        <section class="stage" id="stage-3">
+                            <h2 class="heading">Conclusion</h2>
+                            <article class="stage__point">
+                                <h3 class="heading">Outcome</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point">
+                                <h3 class="heading">My Thoughts</h3>
+                                <div class="description">
+                                    Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
+                                    a
+                                    nunc
+                                    eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra. Class aptent
+                                    taciti
+                                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </div>
+                            </article>
+                            <article class="stage__point stage__point--last">
+                                <div class="description">
+                                    Thanks for reading,<br>
+                                    Parlin
+                                </div>
+                            </article>
+                        </section>
+
+
+                    </div>
+                    <div class="column">
+                        <nav class="nav-tabs">
+                            <a href="#stage-1" class="active">Scope</a>
+                            <a href="#stage-2">Design Process</a>
+                            <a href="#stage-3">Conclusion</a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <section class="banner">
+                    <div class="column">
+                        <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M34.7091 18.616C34.134 19.1912 33.6594 19.8408 33.2818 20.5543C33.0269 21.0361 28.7571 31.5935 28.7571 31.5935C25.4864 39.5857 20.7318 46.7341 14.6257 52.8402L11.6424 55.8235C5.42821 62.0377 5.34638 72.0958 11.4599 78.2448C14.4424 81.2445 18.4122 82.8961 22.6379 82.8961C22.6421 82.8961 22.6465 82.8961 22.6509 82.8961C24.9926 82.8961 27.2559 82.3869 29.3168 81.4238L34.8552 86.9622C35.1488 87.256 35.5338 87.4028 35.9187 87.4028C36.2723 87.4028 36.6249 87.2772 36.9078 87.0295L44.7063 94.828C46.1543 96.276 48.0563 97 49.9584 97C51.8605 97 53.7626 96.276 55.2106 94.828C58.1066 91.9319 58.1066 87.2199 55.2106 84.3238L47.4158 76.529L48.4695 75.4753C48.7517 75.1933 48.9101 74.8107 48.9101 74.4118C48.9101 74.0129 48.7517 73.6302 48.4695 73.3482L44.0839 68.9627C48.4115 65.7428 53.1252 63.0808 58.1772 61.0133C58.1772 61.0133 68.7072 56.7773 69.5397 56.3118C70.4123 55.8241 71.1555 55.0622 71.1555 55.0622C76.8568 49.7488 72.9784 37.2301 62.7599 27.0116C52.5412 16.7929 40.2198 13.1051 34.7091 18.616ZM31.9844 79.8372C32.621 79.3675 33.2272 78.8475 33.7972 78.2775L36.9301 75.1446C37.4058 74.6689 37.89 74.2046 38.3781 73.7453L42.1614 77.5288L35.9187 83.7715L31.9844 79.8372ZM46.8335 92.7009L39.0387 84.9061L42.0014 81.9435L49.7968 89.7391C50.6313 90.5736 51.0907 91.683 51.0907 92.8633C51.0907 92.8667 51.0907 92.8701 51.0907 92.8735C51.0891 93.5013 50.5559 93.9924 49.9281 93.989C48.8064 93.9828 47.6875 93.5548 46.8335 92.7009ZM53.0833 86.4511C54.4292 87.7971 54.7188 89.8008 53.9619 91.4354C53.6831 89.9958 52.9838 88.6717 51.9241 87.612L44.1285 79.8164L45.2885 78.6563L53.0833 86.4511ZM45.2786 74.4118L44.2887 75.4017L40.6185 71.7316C40.9745 71.4265 41.3321 71.1241 41.6941 70.8274L45.2786 74.4118ZM57.0374 58.2289C48.6736 61.6518 41.1929 66.6274 34.803 73.0175L31.6701 76.1504C29.2598 78.5607 26.0572 79.8878 22.6497 79.8878C22.6461 79.8878 22.6425 79.8878 22.6391 79.8878C19.2192 79.8878 16.0065 78.5511 13.5932 76.1237C8.64593 71.1477 8.72494 62.9953 13.7695 57.9508L16.7528 54.9675C23.1429 48.5774 28.1183 41.0967 31.5412 32.7331L32.7249 29.8409C34.0479 35.143 37.6429 41.2052 43.1046 46.6667C47.8532 51.4153 53.2868 54.9432 58.4052 56.6008C58.9247 56.7691 59.4353 56.9159 59.9371 57.0422L57.0374 58.2289ZM45.2415 35.0657C45.2644 35.143 45.2857 35.2196 45.3109 35.2976C45.9184 37.1732 47.1962 39.1493 48.9091 40.8622C50.7795 42.7326 52.8243 43.9833 54.7011 44.5322L50.3104 48.9229C48.5686 47.6376 46.86 46.1673 45.2319 44.5392C43.6036 42.9109 42.1329 41.2022 40.8476 39.4597L45.2415 35.0657ZM57.6634 41.5704L57.6632 41.5702L57.6599 41.5734C56.9 42.3227 53.8767 41.5754 51.0362 38.7351C49.6734 37.3723 48.6297 35.7815 48.1729 34.3708C47.8357 33.3295 47.8466 32.4625 48.2011 32.108C48.3834 31.9256 48.7009 31.8342 49.1083 31.8342C49.4931 31.8342 49.958 31.916 50.464 32.0799C51.8747 32.5367 53.4653 33.5804 54.8283 34.9432C57.6724 37.7873 58.4181 40.8155 57.6634 41.5704ZM69.0281 52.9351C68.6811 53.282 68.5174 53.4322 67.9292 53.7569C67.341 54.0816 66.7596 54.2497 66.7596 54.2497C64.8184 54.8442 62.2471 54.6827 59.3322 53.7387C57.2091 53.0512 55.0176 51.9985 52.8436 50.6439L59.7858 43.7017C59.7874 43.7003 59.7891 43.6989 59.7907 43.6975C62.0842 41.4037 60.8652 36.7257 56.9554 32.8159C55.2424 31.103 53.2664 29.8252 51.3908 29.2177C49.1726 28.4994 47.284 28.7703 46.0736 29.9807L46.0728 29.9799L39.1264 36.9263C37.7722 34.7525 36.7199 32.5614 36.0324 30.4387C35.0868 27.519 34.9262 24.9439 35.524 23.0015C35.524 23.0015 35.7193 22.3541 35.9532 21.9528C36.187 21.5515 36.4869 21.092 36.836 20.7429C37.9842 19.5947 39.6408 19.0534 41.6215 19.0534C46.8408 19.0534 54.3075 22.8138 60.6324 29.1385C69.3574 37.8637 73.202 48.7611 69.0281 52.9351Z"
+                                    fill="#011F3A" />
+                                <path
+                                    d="M88.5689 35.4126H74.8108C73.9801 35.4126 73.3066 36.0861 73.3066 36.9168C73.3066 37.7475 73.9801 38.4209 74.8108 38.4209H88.5689C89.3996 38.4209 90.0731 37.7475 90.0731 36.9168C90.0731 36.0861 89.3996 35.4126 88.5689 35.4126Z"
+                                    fill="#011F3A" />
+                                <path
+                                    d="M68.5475 29.1593C68.8026 29.7066 69.3453 30.0281 69.9117 30.0281C70.1247 30.0281 70.3409 29.9826 70.5464 29.8867L85.7706 22.7871C86.5235 22.4359 86.8492 21.541 86.498 20.7881C86.1469 20.0352 85.252 19.7097 84.4991 20.0607L69.2749 27.1604C68.5222 27.5116 68.1965 28.4064 68.5475 29.1593Z"
+                                    fill="#011F3A" />
+                                <path
+                                    d="M63.2053 23.4523C63.4871 23.6888 63.8302 23.8043 64.1714 23.8043C64.6006 23.8043 65.0269 23.6216 65.3244 23.267L76.6257 9.7997C77.1598 9.16334 77.0767 8.21451 76.4404 7.68063C75.8038 7.14655 74.855 7.22958 74.3213 7.86594L63.02 21.3333C62.4859 21.9696 62.5689 22.9183 63.2053 23.4523Z"
+                                    fill="#011F3A" />
+                                <path
+                                    d="M56.8224 18.5807C56.9528 18.6156 57.0837 18.6323 57.2127 18.6323C57.8767 18.6323 58.4846 18.189 58.6647 17.517L62.8503 1.89369C63.0653 1.09126 62.589 0.266377 61.7866 0.0513816C60.9847 -0.163614 60.1594 0.312505 59.9442 1.11513L55.7586 16.7384C55.5436 17.541 56.02 18.3657 56.8224 18.5807Z"
+                                    fill="#011F3A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="97" height="97" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="description">
+                            Feel free to contact me or download my resume.
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="button button--secondary">Contact Me</a>
+                        <a href="#" class="button button--secondary">Download Resume</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section class="featured-product">
+            <div class="container">
+                <h2 class="heading">Read Next Work</h2>
+                <article class="product-item">
+                    <div class="column product-item__image-wrapper">
+                        <img src="images/projects/project-1-preview.jpg" width="495px" height="215px" alt="Project 1">
+                    </div>
+                    <div class="column">
+                        <div class="product-item__type">UX / UI DESIGN</div>
+                        <h3 class="heading">Project Title</h3>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                        </div>
+                        <a href="/" class="button button--primary button--border">
+                            Read Case Study
+                            <svg fill="none" height="18" viewBox="0 0 10 18" width="10"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m1.4652 17.485 8.485-8.48501-8.485-8.485006-1.4150043 1.413996 7.0720043 7.07101-7.0720043 7.07101z"
+                                    fill="#dd2c00" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="heading">Parlin Roziya</h2>
+        <ul class="navigation">
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Resume</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <a href="#" class="copyright">
+            A Portfolio Desiged by Parlin
+            <svg width="15" height="12" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                    fill="#ffffff99" />
+            </svg>
+        </a>
+    </footer>
+    <script src="nav-stage.js" async></script>
+    <script>
+        function toggleMobileMenu() {
+            let body = document.querySelector("body");
+            body.classList.toggle("mobile-menu-is-opened");
+        }
+
+        function smoothScroll(selector) {
+            let item = document.querySelector(selector);
+            const padding = 80;
+            scroll({
+                top: item.offsetTop - padding,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+
+</html>

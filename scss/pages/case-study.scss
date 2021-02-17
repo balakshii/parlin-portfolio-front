@@ -1,0 +1,25 @@
+//Import basic styles and default rules.
+@import '../style';
+
+//Import components
+@import '../components/buttons',
+'../components/author-name',
+'../components/mobile-nav-menu',
+'../components/label',   
+'../components/heading', 
+'../components/description',
+'../components/nav-tabs',
+'../components/product-item';
+ 
+//Import sections  
+@import '../sections/header',
+'../sections/overview',    
+'../sections/base-content',
+'../sections/stage',
+'../sections/banner',
+'../sections/featured-product',
+'../sections/footer';
+
+main{
+    padding-top: 0;
+}

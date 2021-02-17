@@ -1,0 +1,13 @@
+.author-name{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #10375C;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

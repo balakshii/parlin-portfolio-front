@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/pages/front-page.css">
+    <title>Document</title>
+    <meta name="description" content="he description sould describe the page">
+</head>
+
+<body class="front-page">
+    <div class="mobile-menu-is-opened__shadow" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></div>
+    <div class="mobile-nav-menu">
+        <div class="mobile-nav-menu__header">
+            <a class="author-name" href="/">PARLIN R.</a>
+            <button class="button button-close" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></button>
+        </div>
+        <ul class="navigation">
+            <li class="navigation__active">
+                <svg fill="none" height="17" viewBox="0 0 20 17" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#10375c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path
+                            d="m16.667 4.33333h-13.33334c-.92048 0-1.66667.74619-1.66667 1.66667v8.3333c0 .9205.74619 1.6667 1.66667 1.6667h13.33334c.9205 0 1.6667-.7462 1.6667-1.6667v-8.3333c0-.92048-.7462-1.66667-1.6667-1.66667z" />
+                        <path
+                            d="m13.3337 16v-13.33333c0-.44203-.1756-.86595-.4882-1.17851-.3126-.31257-.7365-.48816-1.1785-.48816h-3.33334c-.44203 0-.86595.17559-1.17851.48816-.31256.31256-.48816.73648-.48816 1.17851v13.33333" />
+                    </g>
+                </svg>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2 19H0V18C0.00440864 14.1358 3.13583 11.0044 7 11H11C14.8642 11.0044 17.9956 14.1358 18 18V19H16V18C15.9967 15.2399 13.7601 13.0033 11 13H7C4.23995 13.0033 2.00331 15.2399 2 18V19ZM9 10C6.23858 10 4 7.76142 4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5C13.9967 7.76005 11.7601 9.99669 9 10ZM9 2C7.34315 2 6 3.34315 6 5C6 6.65685 7.34315 8 9 8C10.6569 8 12 6.65685 12 5C12 3.34315 10.6569 2 9 2Z"
+                        fill="#10375C" />
+                </svg>
+
+                <a href="#">About</a>
+            </li>
+            <li>
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14 20H2C0.89543 20 0 19.1046 0 18V2C0 0.89543 0.89543 0 2 0H9C9.0109 0.000472319 9.02167 0.00249256 9.032 0.006C9.04177 0.00901724 9.05182 0.0110277 9.062 0.012C9.15019 0.0176532 9.23726 0.0347982 9.321 0.063L9.349 0.072C9.37167 0.079682 9.39373 0.0890412 9.415 0.1C9.52394 0.148424 9.62321 0.216185 9.708 0.3L15.708 6.3C15.7918 6.38479 15.8596 6.48406 15.908 6.593C15.918 6.615 15.925 6.638 15.933 6.661L15.942 6.687C15.9699 6.77039 15.9864 6.85718 15.991 6.945C15.9926 6.95418 15.9949 6.96322 15.998 6.972C15.9998 6.98122 16.0004 6.99062 16.0001 7V18C16.0001 19.1046 15.1046 20 14 20ZM2 2V18H14V8H9C8.44772 8 8 7.55228 8 7V2H2ZM10 3.414V6H12.586L10 3.414Z"
+                        fill="#10375C" />
+                </svg>
+
+                <a href="#">Resume</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="column">
+                <button class="button button-hamburger" aria-label="Open mobile menu"
+                    onclick="toggleMobileMenu();"></button>
+                <a class="author-name" href="/">PARLIN R.</a>
+            </div>
+            <div class="column">
+                <ul class="navigation">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+                <a href="#" class="button button--primary button--filled">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <section class="about">
+                <div class="column">
+                    <img src="Parlin.jpg" alt="Parlin UX Designer" width="142px" height="131px" loading="lazy">
+                </div>
+                <div class="column">
+                    <div class="about__description">
+                        <label class="label">UX Designer</label>
+                        <h1 class="heading">Hey, I'm <span>Parlin!</span></h1>
+                        <div class="description">I’m a UX Designer from Toronto, ON. I am passionate about designing
+                            helpful
+                            and
+                            thoughtful experiences from a human-centred perspective. </div>
+                    </div>
+                </div>
+            </section>
+            <section class="items-list">
+                <h2 class="heading">Selected Work</h2>
+                <div class="items-list__container">
+                    <article class="product-item" data-item-id="1">
+                        <div class="column product-item__image-wrapper">
+                            <img src="images/projects/project-1-preview.jpg" width="495px" height="215px"
+                                alt="Project 1" loading="lazy">
+                        </div>
+                        <div class="column">
+                            <div class="product-item__type">UX / UI DESIGN</div>
+                            <h3 class="heading">Project Title</h3>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                            </div>
+                            <a href="/" class="button button--primary button--border">
+                                Read Case Study
+                                <svg fill="none" height="18" viewBox="0 0 10 18" width="10"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m1.4652 17.485 8.485-8.48501-8.485-8.485006-1.4150043 1.413996 7.0720043 7.07101-7.0720043 7.07101z"
+                                        fill="#dd2c00" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-item" data-item-id="2">
+                        <div class="column product-item__image-wrapper">
+                            <img src="images/projects/project-1-preview.jpg" width="495px" height="215px"
+                                alt="Project 1" loading="lazy">
+                        </div>
+                        <div class="column">
+                            <div class="product-item__type">UX / UI DESIGN</div>
+                            <h3 class="heading">Project Title</h3>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                            </div>
+                            <a href="/" class="button button--primary button--border">
+                                Read Case Study
+                                <svg fill="none" height="18" viewBox="0 0 10 18" width="10"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m1.4652 17.485 8.485-8.48501-8.485-8.485006-1.4150043 1.413996 7.0720043 7.07101-7.0720043 7.07101z"
+                                        fill="#dd2c00" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-item" data-item-id="3">
+                        <div class="column product-item__image-wrapper">
+                            <img src="images/projects/project-1-preview.jpg" width="495px" height="215px"
+                                alt="Project 1" loading="lazy">
+                        </div>
+                        <div class="column">
+                            <div class="product-item__type">UX / UI DESIGN</div>
+                            <h3 class="heading">Project Title</h3>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                            </div>
+                            <a href="/" class="button button--primary button--border">
+                                Read Case Study
+                                <svg fill="none" height="18" viewBox="0 0 10 18" width="10"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m1.4652 17.485 8.485-8.48501-8.485-8.485006-1.4150043 1.413996 7.0720043 7.07101-7.0720043 7.07101z"
+                                        fill="#dd2c00" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <button class="button button--primary button--non-bg" onclick="loadMore();" data-action="load-more">
+                    View More
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8V14H6V8H0V6H6V0H8V6H14V8H8Z" fill="#DD2C00" />
+                    </svg>
+                </button>
+                <p data-tip="product-loaded" style="display:none;text-align:center;">All items are loaded!</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="heading">Parlin Roziya</h2>
+        <ul class="navigation">
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Resume</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <a href="#" class="copyright">
+            A Portfolio Desiged by Parlin
+            <svg width="15" height="12" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                    fill="#ffffff99" />
+            </svg>
+        </a>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            let body = document.querySelector("body");
+            body.classList.toggle("mobile-menu-is-opened");
+        }
+
+        function loadMore() {
+
+            let btn = document.querySelector('[data-action="load-more"]');
+            let items = document.querySelectorAll("article[data-item-id]");
+            let tip = document.querySelector('[data-tip="product-loaded"]');
+            let ids = [];
+
+            //Collect ids of loaded items.
+            items.forEach(function (item) {
+                ids.push(item.getAttribute('data-item-id'));
+            });
+            fetchProductsData("http://127.0.0.1:5500/products.json", result => {
+                if (!result.items || !result.next) {
+                    btn.remove();
+                    tip.style.display = "block";
+                } else {
+                    let lastOne = "";
+                    for (i in result.items) {
+                        let item = items[items.length - 1].insertAdjacentHTML("afterend", result.items[i]);
+                        console.log(item);
+                    }
+                    smoothScroll("[data-item-id='"+i+"']");
+                }
+            });
+        }
+
+        function fetchProductsData(route, f) {
+            fetch(route).then((response) => {
+                if (response.ok) {
+                    response.json().then(json => {
+                        f(json);
+                    });
+                }
+            });
+        }
+
+        function smoothScroll(selector) {
+            let item = document.querySelector(selector);
+            const padding = 80;
+            scroll({
+                top: item.offsetTop - padding,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+
+</html>

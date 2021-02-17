@@ -1,0 +1,23 @@
+section.about{
+    .description{
+        margin-top: 30px;
+    }
+    h1.heading{
+        margin-top: 14px;
+    }
+    @media screen and (min-width: $layout-breakpoint-sm){
+        display:flex;
+        .column{
+            width: 100%;
+            &:first-child{
+                width:620px;
+                min-width:620px;
+            }
+            &:last-child{
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+//Import basic styles and default rules.
+@import '../style';
+
+//Import components
+@import '../components/buttons',
+'../components/author-name',
+'../components/mobile-nav-menu',
+'../components/label',   
+'../components/heading',
+'../components/description',
+'../components/product-item';
+
+//Import sections
+@import '../sections/header',
+'../sections/footer',
+'../sections/about',
+'../sections/items-list';
+.about{
+    .about__description{
+        margin-top: 45px;
+    }
+}
+.items-list{
+    padding-top: 110px;
+}
+@media screen and (min-width: $layout-breakpoint-sm){
+    .about{
+        align-items: center;
+        justify-content:space-between;
+        .about__description{
+            margin-top: 0;
+        }
+        .column{
+            &:first-child{
+                order: 2;
+                text-align: right;
+                img{
+                    width: 246px;
+                    height: 227px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $layout-breakpoint-lg){
+
+    main{
+        padding-top:210px;
+    }
+    .items-list{
+        padding-top: 330px;
+    }
+}

@@ -1,0 +1,95 @@
+
+.button{
+    background:none;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s;
+    &-hamburger{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 50%;
+        transition: background 0.3s;
+       &:before{
+           content: '';
+           background: url('../../images/icons/hamburger.svg') no-repeat;
+           width: 18px;
+           height: 12px;
+           display: inline-block;
+       }
+       &:hover{
+        background: rgba($primary-color, 0.1);
+       }
+    }
+    &-close{
+        width:40px;
+        height: 40px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 50%;
+        transition: background 0.3s;
+        &:before{
+            content: '';
+            background: url('../../images/icons/close.svg') no-repeat;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+        }
+       &:hover{
+        background: rgba($primary-color, 0.1);
+       }
+    }
+    &--primary{
+        height: 124px;
+        height: 42px;
+        padding: 0 15px;
+        border-radius: 4px;
+        display:flex;
+        align-items: center;
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 42px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        box-sizing: border-box;
+        svg{
+            margin-left: 17px;
+        }
+    }
+    &--secondary{
+        height: 124px;
+        height: 42px;
+        padding: 0 15px;
+        border-radius: 4px;
+        display:inline-flex;
+        align-items: center;
+        color: $white-color;
+        background-color: $secondary-color;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 42px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        box-sizing: border-box;
+        &:hover{
+            background-color:#B72400; 
+        }
+    }
+    &--border{
+        font-size: 16px;
+        border: 1px solid $secondary-color;
+        transition:background-color 0.3s;
+        &:hover{
+            text-decoration: none;
+            background-color:#FFE7E1;
+        }
+    }
+} 

@@ -1,0 +1,30 @@
+.nav-tabs{
+    display:flex;
+    flex-direction: column;
+    a{
+        width: 177px;
+        height: 44px;
+        border-radius: 4px;
+        font-family: $common-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $dark-color;
+        padding: 0 10px;
+        line-height: 44px;
+        height: 44px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &.active{
+            background: $secondary-color;
+            color: $white-color;
+            &:hover{
+                background-color: #B72400;
+            }
+        }
+    }
+}

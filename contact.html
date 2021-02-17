@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/pages/contact.css">
+    <title>Document</title>
+    <meta name="description" content="he description sould describe the page">
+</head>
+
+<body class="contact-page">
+    <div class="mobile-menu-is-opened__shadow" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></div>
+    <div class="mobile-nav-menu">
+        <div class="mobile-nav-menu__header">
+            <a class="author-name" href="/">PARLIN R.</a>
+            <button class="button button-close" aria-label="Close mobile menu" onclick="toggleMobileMenu();"></button>
+        </div>
+        <ul class="navigation">
+            <li class="navigation__active">
+                <img src="images/icons/case.svg" alt="Work">
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <img src="images/icons/user.svg" alt="About">
+                <a href="#">About</a>
+            </li>
+            <li>
+                <img src="images/icons/file.svg" alt="Resume">
+                <a href="#">Resume</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="column">
+                <button class="button button-hamburger" aria-label="Open mobile menu"
+                    onclick="toggleMobileMenu();"></button>
+                <a class="author-name" href="/">PARLIN R.</a>
+                <ul class="navigation">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <a href="#" class="button button--primary button--filled">Contact Me</a>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <label class="label">Stay in Touch</label>
+            <h1 class="heading">Contact <span>Me</span></h1>
+            <section class="contact-form">
+                <form action="/" method="post" class="form sent">
+                    <div class="form__field-group">
+                        <label for="firstName" class="form__field-label">Name *</label>
+                        <input id="firstName" type="text" name="firstName" class="form__field">
+                        <div class="form__error-tip">Please provide your name.</div>
+                        <div class="form__error-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                                    fill="#DD3636" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form__field-group">
+                        <label for="email" class="form__field-label">Email *</label>
+                        <input id="email" type="text" name="email" class="form__field">
+                        <div class="form__error-tip">Please provide your email address.</div>
+                        <div class="form__error-email">Invalid email address, please try again.</div>
+                        <div class="form__error-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                                    fill="#DD3636" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form__field-group">
+                        <label for="message" class="form__field-label">Message *</label>
+                        <textarea id="message" class="form__field"></textarea>
+                        <div class="form__error-tip">Please provide your message.</div>
+                        <div class="form__error-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                                    fill="#DD3636" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form__field-group form__field-group--message">
+                        <button class="button button--secondary">Submit</button>
+                        <div class="form__result-message" style="display:none">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM11.984 20H12C16.4167 19.9956 19.9942 16.4127 19.992 11.996C19.9898 7.57929 16.4087 4 11.992 4C7.57528 4 3.99421 7.57929 3.992 11.996C3.98979 16.4127 7.56729 19.9956 11.984 20ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"
+                                    fill="#27AE60" />
+                            </svg>
+
+                            Message Successfully Sent
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2 class="heading">Parlin Roziya</h2>
+        <ul class="navigation">
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Resume</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <a href="#" class="copyright">
+            A Portfolio Desiged by Parlin
+            <svg width="15" height="12" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"
+                    fill="#ffffff99" />
+            </svg>
+        </a>
+    </footer>
+    <script>
+        function toggleMobileMenu() {
+            let body = document.querySelector("body");
+            body.classList.toggle("mobile-menu-is-opened");
+        }
+
+        function fetchProductsData(route, f) {
+            fetch(route).then((response) => {
+                if (response.ok) {
+                    response.json().then(json => {
+                        f(json);
+                    });
+                }
+            });
+        }
+    </script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

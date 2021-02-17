@@ -1,0 +1,102 @@
+.header{
+    background: $white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    position: fixed;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .column{
+            &:first-child{
+                display:flex;
+                align-items: center;
+                .button-hamburger{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    
+    .navigation{
+        display: none;
+    }
+    .button--primary{
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+    @media screen and (min-width: $layout-breakpoint-md){
+        .column{
+            &:last-child{
+                display: flex;
+                align-items: center;
+            }
+        }
+        .button.button-hamburger{
+            display: none;
+        }
+        .button--filled{
+            background: $secondary-color;
+            color: $white-color;
+            transition: background-color 0.3s;
+            &:hover{
+                text-decoration:none;
+                background-color: #B72400;
+            }
+        }
+        .navigation{
+            display: flex;
+            list-style: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.25px;
+            font-family: $common-font;
+            margin-right: 30px;
+            li{
+                margin: 0 15px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            &__active{
+                a{
+                    font-weight: bold;
+                    position:relative;
+                    &:before{
+                        content:'';
+                        position:absolute;
+                        bottom: -4px;
+                        left:0;
+                        width:100%;
+                        height: 3px;
+                        background: $secondary-color;
+                    }
+                }
+            }
+            a{
+                position:relative;
+                color: $primary-color;
+                text-decoration: none;
+                &:hover{
+                    font-weight: bold;
+                    &:before{
+                        content:'';
+                        position:absolute;
+                        bottom: -4px;
+                        left:0;
+                        width:100%;
+                        height: 3px;
+                        background: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

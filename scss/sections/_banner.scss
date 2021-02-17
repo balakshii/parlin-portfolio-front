@@ -1,0 +1,47 @@
+.banner{
+    background: $white-blue;
+    border-radius:8px;
+    padding: 20px;
+    .description{
+        color: $white-color;
+    }
+    svg{
+        display: none;
+    }
+    .column{
+        &:last-child{
+            margin-top: 40px;
+        }
+        .button{
+            margin-bottom: 20px;
+            display: table;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media screen and (min-width: $layout-breakpoint-sm){
+        display: flex;
+        height: 160px;
+        svg{
+            display: block;
+        }
+        .column{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            &:last-child{
+                margin:0;
+            }
+            .button{
+                margin:0 7px;
+            }
+            .description{
+                width: 300px;
+                margin-left: 26px;
+            }
+        }
+        
+    }
+}
